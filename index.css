@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar-container {
+    z-index: 10000;
+}
+
+input::placeholder {
+    color: rgb(209, 203, 203);
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #388da9 !important;
+}
+
+textarea::placeholder {
+    color: rgb(209, 203, 203);
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: #fafbfd;
+    color: #26687e;
+    box-shadow: none;
+}
+
+/* Change color when the accordion is collapsed (closed) */
+.accordion-button.collapsed {
+    background-color: white;
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: #fafbfd;
+}
+
+.cointainer1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+.cointainer1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assets/hero-bg-light.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#svgCard:hover svg {
+    fill: white;
+    background-color: #388da9 !important;
+}
+
+#svgCard:hover #svgHead {
+    color: #388da9;
+}
+
+.container5 img {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    cursor: pointer;
+
+}
+
+.container5 img:hover {
+    opacity: 1;
+    filter: none;
+}
+
+.cont7-card:hover {
+    background-color: #f7fbfc !important;
+    cursor: pointer;
+}
+
+.cont8-card button:hover {
+    background-color: #26687e !important;
+}
+
+.service-card:hover .cont-para {
+    color: black !important;
+    cursor: pointer;
+}
+
+.nav-link:focus {
+    color: #26687e;
+}
+
+.info-3 svg {
+    min-width: 25px !important;
+}
+
+.contact-border {
+    font-size: 20px;
+    color: #388da9;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    border: 2px dotted color-mix(in srgb, #388da9, transparent 40%);
+}
+
+.social-media svg:hover {
+    color: #26687e !important;
+}
+
+@media (max-width:768px) {
+    .container5 img {
+        height: 100px !important;
+        width: 150px !important;
+        gap: 50px !important;
+    }
+}
+
+@media (min-width:768px) {
+    .personal-info {
+        display: flex;
+        flex-direction: row !important;
+        gap: 10px;
+    }
+
+    .last-first {
+        display: flex;
+        flex-direction: row !important;
+        gap: 100px !important;
+        padding-bottom: 40px;
+    }
+
+    .serve-links {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 100px;
+        padding-top: 0px !important;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .container3,
+    .container4,
+    .container7,
+    .container8,
+    .container9,
+    .container10,
+    .pricing-cards,
+    #contacts {
+        padding: 20px 50px !important;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .samar {
+        max-width: 100% !important;
+    }
+
+    .container2 {
+        justify-content: start !important;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container34,
+    .container7,
+    .container8,
+    .container9,
+    .cont10-cards,
+    .container11,
+    .pricing-cards {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .locate-info {
+        flex-direction: row !important;
+    }
+
+    .location-1 {
+        width: 50% !important;
+    }
+
+    .map-cont {
+        display: flex;
+        gap: 20px;
+    }
+
+    .map-cont1 {
+        width: 100%;
+    }
+
+    .map-cont2 {
+        width: 100%;
+        margin-top: 0px !important;
+    }
+
+    .pricing-cards {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .pricing-info {
+        min-width: 420px !important;
+        max-width: 420px !important;
+    }
+
+    .pricing-info button:hover {
+        background-color: #388da9 !important;
+        border: 1px solid transparent !important;
+        color: white;
+    }
+
+    .service-card {
+        min-width: 400px !important;
+        max-width: 400px !important;
+        min-height: 250px !important;
+    }
+
+    .cont10-cards {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        gap: 50px !important;
+    }
+
+    .location-2 {
+        display: flex;
+        flex-direction: row !important;
+        width: 50% !important;
+    }
+
+
+
+    .container8,
+    .container9,
+    .container11 {
+        gap: 50px;
+    }
+
+    .cont8-card {
+        width: 500px !important;
+
+    }
+
+    .feature-3 {
+        min-width: 400px !important;
+        max-width: 400px !important;
+
+    }
+
+    .feature3-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info-3 {
+        width: 220px;
+    }
+
+    .container3 {
+        width: 50%;
+    }
+
+    .container4 {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .cont4-1 {
+        height: 300px !important;
+        width: 200px !important;
+    }
+
+    .cont4-2 img {
+        height: 140px !important;
+        width: 200px !important;
+    }
+
+    .last {
+        display: flex;
+        flex-direction: row;
+        gap: 80px !important;
+        padding: 40px 250px !important;
+    }
+
+    .newsletter {
+        max-width: 450px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container8,
+    .container9 {
+        gap: 150px;
+    }
+
+    .container11 {
+        gap: 100px;
+    }
+
+    #contacts {
+        padding: 20px 50px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .cont4-1 {
+        height: 400px !important;
+        width: 300px !important;
+    }
+
+    .container3 {
+        justify-content: start;
+    }
+
+    .cont4-2 img {
+        height: 190px !important;
+        width: 300px !important;
+    }
+
+    .container7 {
+        padding: 20px 100px;
+    }
+
+    .service-card {
+        min-width: 650px !important;
+        max-width: 650px !important;
+        min-height: 200px !important;
+    }
+
+    .feature-3 {
+        min-width: 600px !important;
+        max-width: 700px !important;
+    }
+
+    #contacts {
+        padding: 20px 250px;
+    }
